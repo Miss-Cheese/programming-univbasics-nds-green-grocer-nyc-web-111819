@@ -83,7 +83,7 @@ def apply_clearance(cart)
 
 cart.each {|item|
   puts "1---------------"
-   pp item[:clearance][:true]
+   pp item[:clearance] == true
    puts "2---------------"
 
 }
