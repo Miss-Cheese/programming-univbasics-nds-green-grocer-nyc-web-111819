@@ -106,6 +106,10 @@ total = 0.0
 consolidated_cart.each {|cart_item|
   total += cart_item[:price] * cart_item[:count]
 }
-total
+
+if total > 100
+  total * .9
+else total
+end
 
 end
