@@ -86,14 +86,10 @@ cart.each {|item|
    if item[:clearance] == true
      cart << item[:price] - 20%
    end
-
 }
-
-
 cart
-
-
 end
+
 
 def checkout(cart, coupons)
   # Consult README for inputs and outputs
