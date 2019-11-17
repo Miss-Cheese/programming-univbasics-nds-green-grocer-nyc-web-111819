@@ -83,10 +83,8 @@ def apply_clearance(cart)
 
 cart.each {|item|
 
-
    if item[:clearance] == true
-     disounted_cart_item = item[:price] - 20%
-     disounted_cart_item
+     cart << item[:price] - 20%
    end
 
 }
