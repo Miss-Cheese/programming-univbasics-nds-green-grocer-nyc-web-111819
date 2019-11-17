@@ -82,17 +82,17 @@ def apply_clearance(cart)
 
 
 cart.each {|item|
-  puts "1---------------"
-   if item[:clearance] == true
-     disounted_cart = item[:price]*0.8
 
+
+   if item[:clearance] == true
+     disounted_cart_item = item[:price] - 20%
+     disounted_cart_item
    end
-   puts "2---------------"
 
 }
 
 
-
+cart
 
 
 end
