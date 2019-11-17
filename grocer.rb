@@ -101,6 +101,11 @@ consolidated_cart = consolidate_cart(cart)
 consolidated_cart = apply_coupons(consolidated_cart, coupons)
 consolidated_cart = apply_clearance(consolidated_cart)
 
-consolidated_cart
+total = 0.0
+
+consolidated_cart.each {|cart_item|
+  total += cart_item[:price] * cart_item[:count]
+}
+total
 
 end
