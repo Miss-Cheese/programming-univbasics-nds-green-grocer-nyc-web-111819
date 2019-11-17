@@ -80,12 +80,16 @@ def apply_clearance(cart)
   #
   # REMEMBER: This method **should** update cart
 
-cart.each {|item|
   puts "1---------------"
-   pp item
-   puts "2---------------"
+  pp cart
+  puts "2---------------"
 
-}
+# cart.each {|item|
+#   puts "1---------------"
+#    pp item
+#    puts "2---------------"
+#
+# }
 
 
 
