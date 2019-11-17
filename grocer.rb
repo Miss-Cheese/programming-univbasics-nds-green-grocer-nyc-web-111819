@@ -76,10 +76,6 @@ def apply_coupons(consolidated_cart, coupons)
 end
 
 def apply_clearance(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
-
 
 cart.each {|item|
    if item[:clearance] == true
@@ -100,4 +96,10 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
+
+consolidated_cart = consolidate_cart(cart)
+consolidated_cart = apply_coupons(consolidated_cart, coupons)
+consolidated_cart = apply_clearance(consolidated_cart)
+
+
 end
