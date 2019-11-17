@@ -59,10 +59,6 @@ def apply_coupon_to_cart(consolidated_cart, coupon)
           :count => coupon[:num]
         }
         cart_item[:count] = cart_item[:count] - coupon[:num]
-
-        # if cart_item[:count] = 0
-        #   consolidated_cart.delete(cart_item)
-        # end
       end
     end
   }
@@ -72,17 +68,10 @@ end
 
 def apply_coupons(consolidated_cart, coupons)
 
-# puts "OG_cart----------------"
-# pp consolidated_cart
-# puts "Coupons-------------"
-# pp coupons
-# puts "Result----------------"
-
   coupons.each {|coupon|
   consolidated_cart = apply_coupon_to_cart(consolidated_cart, coupon)
   }
-  # pp consolidated_cart
-  # puts "4----------------"
+
   consolidated_cart
 end
 
@@ -90,6 +79,9 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+
+
+
 end
 
 def checkout(cart, coupons)
