@@ -85,6 +85,7 @@ cart.each {|item|
   puts "1---------------"
    if item[:clearance] == true
      return item
+   end
    puts "2---------------"
 
 }
