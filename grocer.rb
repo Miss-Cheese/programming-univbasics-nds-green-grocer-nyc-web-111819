@@ -108,7 +108,7 @@ consolidated_cart.each {|cart_item|
 }
 
 if total > 100
-  total * .9
+  total * 0.9
 else total
 end
 
