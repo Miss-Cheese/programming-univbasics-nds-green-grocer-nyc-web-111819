@@ -84,7 +84,9 @@ def apply_clearance(cart)
 cart.each {|item|
 
    if item[:clearance] == true
-     cart << item[:price]*0.8.round
+     puts "1-------------"
+     puts item[:price]
+     puts "2------------"
      cart
    end
 }
