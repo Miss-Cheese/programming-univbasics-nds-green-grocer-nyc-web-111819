@@ -79,9 +79,16 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-puts "1---------------"
-pp cart
-puts "2---------------"
+
+cart.each {|item|
+  puts "1---------------"
+   cart[:clearance]
+   puts "2---------------"
+
+}
+
+
+
 
 
 end
