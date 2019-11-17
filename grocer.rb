@@ -79,7 +79,9 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-
+puts "1---------------"
+pp cart
+puts "2---------------"
 
 
 end
